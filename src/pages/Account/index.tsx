@@ -372,13 +372,14 @@ const Account = ({navigation, route}) => {
           <View style={styles.deleteCard}>
             <Text style={styles.deleteTitle}>Delete Account</Text>
             <Text style={styles.deleteWarning}>
-              Warning: This action is irreversible! All your data will be permanently deleted.
+              Warning: This action is irreversible! All your data will be
+              permanently deleted.
             </Text>
-            
+
             <Text style={styles.deleteInstructions}>
               To confirm deletion, please enter the confirmation code: 123456
             </Text>
-            
+
             <TextInput
               style={styles.confirmationInput}
               keyboardType="numeric"
@@ -386,15 +387,15 @@ const Account = ({navigation, route}) => {
               onChangeText={setConfirmationCode}
               autoFocus={true}
             />
-            
+
             <View style={styles.deleteButtonRow}>
-              <TouchableOpacity 
+              <TouchableOpacity
                 style={styles.cancelDeleteButton}
                 onPress={() => setShowDeleteModal(false)}>
                 <Text style={styles.cancelDeleteText}>Cancel</Text>
               </TouchableOpacity>
-              
-              <TouchableOpacity 
+
+              <TouchableOpacity
                 style={styles.confirmDeleteButton}
                 onPress={confirmAccountDeletion}
                 disabled={isDeleting}>
@@ -508,7 +509,7 @@ const styles = StyleSheet.create({
   logoutButton: {
     backgroundColor: '#1a1a1a',
     borderRadius: 12,
-    paddingVertical: 12,
+    paddingVertical: 10,
     paddingHorizontal: 16,
     width: '40%',
     alignItems: 'center',
@@ -516,7 +517,7 @@ const styles = StyleSheet.create({
   passwordButton: {
     backgroundColor: '#4caf50',
     borderRadius: 12,
-    paddingVertical: 12,
+    paddingVertical: 10,
     paddingHorizontal: 16,
     width: '55%',
     alignItems: 'center',

@@ -9,7 +9,7 @@ import SignUp from './src/pages/SignUp';
 import Dashboard from './src/pages/Dashboard';
 import Account from './src/pages/Account';
 import AllFood from './src/pages/AllFood';
-import ChangePassword from './src/pages/ChangePassword';
+import ChangePassword from './src/pages/changePassword';
 import Favorite from './src/pages/Favorite';
 import MoodRegister from './src/pages/MoodRegister';
 import Others from './src/pages/Others';
